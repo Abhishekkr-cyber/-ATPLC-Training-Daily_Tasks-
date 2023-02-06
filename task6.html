@@ -1,0 +1,100 @@
+<!Doctype html>
+<html lang="eng">
+
+<head>
+    <title> CISC0 </title>
+    <link rel="stylesheet" href="css/cons.css">
+    <style>
+        /* css Reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(1892753.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .left {
+            display: inline-block;
+            border: 2px solid red;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+
+        }
+
+        .left img {
+            width: 60px;
+        }
+
+        .mid {
+            display: block;
+            width: 33%;
+            margin: 20px auto;
+            border: 2px solid green;
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 0px;
+            display: inline-block;
+            border: 2px solid yellow;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 24px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+<body>
+    <header class="header">
+        <!--left box for logo -->
+        <div class="left">
+            <img src="cisco_netacad_logo.png" alt="">
+            <div>Networking Academy</div>
+        </div>
+        <!--mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">i'm learning</a></li>
+                <li><a href="#">My NetAcad</a></li>
+                <li><a href="#">last login on</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">more</a></li>
+            </ul>
+
+        </div>
+        <!--right box for buttons -->
+        <div class="right">
+            <button class="btn">call us Now</button>
+            <button class="btn">email us</button>
+        </div>
+
+</body>
+
+</html>

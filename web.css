@@ -1,0 +1,35 @@
+hr {
+    margin-top: 2%;
+    color: black;
+
+
+}
+
+.navvigation {
+    color: red;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    color: gray;
+
+    a:visited {
+        color: red;
+    }
+}
+
+#active {
+    color: aqua;
+}
