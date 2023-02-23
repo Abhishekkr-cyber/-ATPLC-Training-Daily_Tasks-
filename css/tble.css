@@ -1,0 +1,21 @@
+img {
+    width: 50px;
+    margin-left: 40%;
+
+    tble {
+        background-color: blue;
+        color: white;
+        width: 500px;
+        margin: left 40px;
+    }
+
+    tr:hover {
+        background-color: pink;
+
+    }
+
+    th {
+        background-color: aqua;
+        color: aquamarine;
+    }
+}
