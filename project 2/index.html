@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dashboard 1</a></li>
+                <li><a href="#">Dashboard 2</a></li>
+                <li><a href="#">Dashboard 3</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Overview</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Users</h3>
+                    <p>10,000</p>
+                </div>
+                <div class="card">
+                    <h3>Sales</h3>
+                    <p>$1,000,000</p>
+                </div>
+                <div class="card">
+                    <h3>Visitors</h3>
+                    <p>50,000</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Sales</h2>
+            <canvas id="salesChart"></canvas>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

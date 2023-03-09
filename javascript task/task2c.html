@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>String and Number Addition</title>
+    <script>
+        function addStrings() {
+            var str1 = document.getElementById("string1").value;
+            var str2 = document.getElementById("string2").value;
+            var result = document.getElementById("result1");
+
+            result.innerHTML = str1 + str2;
+        }
+
+        function addNumbers() {
+            var num1 = Number(document.getElementById("number1").value);
+            var num2 = Number(document.getElementById("number2").value);
+            var result = document.getElementById("result2");
+
+            result.innerHTML = num1 + num2;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>String and Number Addition</h1>
+    <label for="string1">Enter the first string:</label>
+    <input type="text" id="string1">
+    <br>
+    <label for="string2">Enter the second string:</label>
+    <input type="text" id="string2">
+    <br>
+    <button onclick="addStrings()">Add Strings</button>
+    <p id="result1"></p>
+    <br>
+    <label for="number1">Enter the first number:</label>
+    <input type="number" id="number1">
+    <br>
+    <label for="number2">Enter the second number:</label>
+    <input type="number" id="number2">
+    <br>
+    <button onclick="addNumbers()">Add Numbers</button>
+    <p id="result2"></p>
+</body>
+
+</html>

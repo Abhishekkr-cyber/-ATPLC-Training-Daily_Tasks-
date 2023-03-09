@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Number Comparison</title>
+    <script>
+        function compareNumbers() {
+            var num1 = document.getElementById("number1").value;
+            var num2 = document.getElementById("number2").value;
+            var result = document.getElementById("result");
+
+            if (isNaN(num1) || isNaN(num2)) {
+                result.innerHTML = "Please enter valid numbers.";
+            } else {
+                if (num1 == num2) {
+                    result.innerHTML = num1 + " is equal to " + num2 + ".";
+                } else if (num1 > num2) {
+                    result.innerHTML = num1 + " is greater than " + num2 + ".";
+                } else {
+                    result.innerHTML = num2 + " is greater than " + num1 + ".";
+                }
+
+                if (typeof num1 === 'number' && typeof num2 === 'number') {
+                    result.innerHTML += " Both numbers are of type number.";
+                } else {
+                    result.innerHTML += " Both numbers are not of type number.";
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Number Comparison</h1>
+    <label for="number1">Enter the first number:</label>
+    <input type="number" id="number1">
+    <br>
+    <label for="number2">Enter the second number:</label>
+    <input type="number" id="number2">
+    <br>
+    <button onclick="compareNumbers()">Compare</button>
+    <p id="result"></p>
+</body>
+
+</html>

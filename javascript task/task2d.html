@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loop Concepts</title>
+    <script>
+        function printNumbersFor() {
+            var num1 = Number(document.getElementById("number1").value);
+            var num2 = Number(document.getElementById("number2").value);
+            var result = document.getElementById("result1");
+
+            result.innerHTML = "";
+
+            for (var i = num1; i <= num2; i++) {
+                result.innerHTML += i + " ";
+            }
+        }
+
+        function printNumbersWhile() {
+            var num1 = Number(document.getElementById("number1").value);
+            var num2 = Number(document.getElementById("number2").value);
+            var result = document.getElementById("result2");
+
+            result.innerHTML = "";
+
+            var i = num1;
+            while (i <= num2) {
+                result.innerHTML += i + " ";
+                i++;
+            }
+        }
+
+        function printNumbersDoWhile() {
+            var num1 = Number(document.getElementById("number1").value);
+            var num2 = Number(document.getElementById("number2").value);
+            var result = document.getElementById("result3");
+
+            result.innerHTML = "";
+
+            var i = num1;
+            do {
+                result.innerHTML += i + " ";
+                i++;
+            } while (i <= num2);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Loop Concepts</h1>
+    <label for="number1">Enter the first number:</label>
+    <input type="number" id="number1">
+    <br>
+    <label for="number2">Enter the second number:</label>
+    <input type="number" id="number2">
+    <br>
+    <button onclick="printNumbersFor()">Print Numbers using For Loop</button>
+    <p id="result1"></p>
+</body>
+
+</html>

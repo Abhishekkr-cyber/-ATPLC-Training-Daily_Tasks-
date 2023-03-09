@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function addNumbers() {
+            var first, second;
+
+            first = Number(document.getElementById("firstInput").value);
+            second = Number(document.getElementById("secondInput").value);
+
+            document.getElementById("result").value = first + second;
+        }
+    </script>
+</head>
+
+<body>
+    First number : <input id="firstInput" /> Second number :
+    <input id="secondInput" />
+    <button onclick="addNumbers()">Find Sum</button>
+    <input id="result" />
+</body>
+
+</html>

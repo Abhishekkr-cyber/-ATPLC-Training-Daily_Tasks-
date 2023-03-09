@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Square Calculator</title>
+</head>
+
+<body>
+    <h1>Square Calculator</h1>
+    <label for="number1">Enter number 1:</label>
+    <input type="number" id="number1">
+    <label for="number2">Enter number 2:</label>
+    <input type="number" id="number2">
+    <button onclick="calculateSquares()">Calculate</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateSquares() {
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+
+            var square1 = number1 * number1;
+            var square2 = number2 * number2;
+
+            document.getElementById("result").innerHTML = "Square of " + number1 + " is " + square1 + ", and square of " + number2 + " is " + square2;
+        }
+    </script>
+</body>
+
+</html>
