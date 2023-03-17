@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Concatenate Arrays</title>
+</head>
+
+<body>
+    <h1>Concatenate Arrays</h1>
+
+    <p>Click the button to concatenate two arrays and display the result.</p>
+
+    <button onclick="concatenateArrays()">Concatenate Arrays</button>
+
+    <p id="output"></p>
+
+    <script>
+        function concatenateArrays() {
+            // Define two arrays
+            let array1 = ["apple", "banana", "cherry"];
+            let array2 = ["date", "elderberry", "fig"];
+
+            // Concatenate the arrays
+            let concatenatedArray = array1.concat(array2);
+
+            // Display the concatenated array
+            let outputElement = document.getElementById("output");
+            outputElement.innerHTML = concatenatedArray.join(", ");
+        }
+    </script>
+</body>
+
+</html>

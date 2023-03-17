@@ -1,23 +1,34 @@
-* {
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.4;
-    color: #333;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+h1 {
+    margin-top: 40px;
 }
 
-nav
+form {
+    margin-top: 40px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+#results {
+    margin-top: 40px;
+    font-weight: bold;
+}

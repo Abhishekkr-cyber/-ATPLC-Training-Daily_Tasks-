@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Array Example</title>
+</head>
+
+<body>
+    <h1>JavaScript Array Example</h1>
+    <p>Click the button to remove the first element from the array.</p>
+    <br>
+    <button onclick="removeFirstElement()">Remove First Element</button>
+    <br>
+    <br>
+    <p id="output"></p>
+
+    <script>
+        // Define an array of elements
+        let elements = ["apple", "banana", "orange", "pear", "kiwi"];
+
+        // Display the original array on the page
+        let outputElement = document.getElementById("output");
+        outputElement.innerHTML = "Original Array: " + elements.join(", ");
+
+        // Define a function to remove the first element of the array
+        function removeFirstElement() {
+            elements.shift();
+            outputElement.innerHTML = "New Array: " + elements.join(", ");
+        }
+    </script>
+</body>
+
+</html>

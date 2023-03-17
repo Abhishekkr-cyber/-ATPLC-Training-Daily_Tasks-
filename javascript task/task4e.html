@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Replace Text with JavaScript</title>
+</head>
+
+<body>
+    <h1>Original Text:</h1>
+    <p id="text">This is some text that we will replace.</p>
+    <br>
+    <button onclick="replaceText()">Replace Text</button>
+
+    <script>
+        function replaceText() {
+            // Get the element containing the original text
+            let textElement = document.getElementById("text");
+
+            // Replace the text with new text
+            textElement.innerHTML = "This is the new text that replaces the old text.";
+        }
+    </script>
+</body>
+
+</html>
