@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        .logo {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .heading {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .division {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .division:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="division">
+            <img class="logo" src="th.jpeg" alt="Home Logo">
+            <h2 class="heading">Home</h2>
+        </div>
+        <div class="division">
+            <img class="logo" src="about.png" alt="About Logo">
+            <h2 class="heading">About</h2>
+        </div>
+        <div class="division">
+            <img class="logo" src="unnamed.png" alt="Gallery Logo">
+            <h2 class="heading">Gallery</h2>
+        </div>
+        <div class="division">
+            <img class="logo" src="contact.png" alt="Contact Logo">
+            <h2 class="heading">Contact</h2>
+        </div>
+    </div>
+</body>
+
+</html>
