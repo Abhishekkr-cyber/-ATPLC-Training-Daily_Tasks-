@@ -3,7 +3,11 @@ $host = 'localhost';
 $username = 'root';
 $password = '';
 $dbname = 'mobile';
-@mysql_connect($host,$username,$password) or die ("could not connect to MySQL");
-@mysql_select_db($dbname) or die ("No database");
+// Create connection
+$conn = new mysqli($servername, $username, $password);
 
-?>
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
