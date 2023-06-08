@@ -2,93 +2,69 @@
 <html>
 
 <head>
-    <title>MARKS SHEET USING HTML TABLES</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
 
+        td,
+        th {
+            border: 2px solid black;
+            padding: 8px;
+        }
 
+        th {
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <h2>HTML TABLE</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Roll No.</th>
-                    <th>Name</th>
-                    <th>English</th>
-                    <th>Maths</th>
-                    <th>Science</th>
-                    <th>Computer Science</th>
-                    <th>Social Studies</th>
-                    <th>Total</th>
-                    <th>Max Marks</th>
-                    <th>Grade </th>
-                <tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>01</td>
-                    <td>Bhasker</td>
-                    <td>86</td>
-                    <td>77</td>
-                    <td>87</td>
-                    <td>92</td>
-                    <td>95</td>
-                    <td>437</td>
-                    <td>500</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td>02</td>
-                    <td>Balwant</td>
-                    <td>86</td>
-                    <td>77</td>
-                    <td>87</td>
-                    <td>92</td>
-                    <td>95</td>
-                    <td>437</td>
-                    <td>500</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td>03</td>
-                    <td>Kailash</td>
-                    <td>86</td>
-                    <td>77</td>
-                    <td>87</td>
-                    <td>92</td>
-                    <td>95</td>
-                    <td>437</td>
-                    <td>500</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td>04</td>
-                    <td>Nikhil</td>
-                    <td>86</td>
-                    <td>77</td>
-                    <td>87</td>
-                    <td>92</td>
-                    <td>95</td>
-                    <td>437</td>
-                    <td>500</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td>05</td>
-                    <td>Shubham</td>
-                    <td>86</td>
-                    <td>77</td>
-                    <td>87</td>
-                    <td>92</td>
-                    <td>95</td>
-                    <td>437</td>
-                    <td>500</td>
-                    <td>A</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+
+    <table align="center">
+        <tr>
+            <th colspan="3">Student Information</th>
+            <th rowspan="2">CGPA</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Registration No.</th>
+            <th>Semester</th>
+        </tr>
+        <tr>
+            <td>Abhishek kmar</td>
+            <td>123456</td>
+            <td>3</td>
+            <td>8.7</td>
+        </tr>
+        <tr>
+            <td>Rahul kumar</td>
+            <td>789012</td>
+            <td>3</td>
+            <td>8.9</td>
+        </tr>
+        <tr>
+            <td>sahil kumar</td>
+            <td>21340</td>
+            <td>3</td>
+            <td>8.8</td>
+        </tr>
+    </table>
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+
+        table,
+        th,
+        td {
+            border: 3px solid rgb(125, 188, 0);
+            border-collapse: collapse;
+            padding: 10px;
+            background-color: rgb(22, 143, 208);
+            color: black;
+        }
+    </style>
 </body>
 
 </html>
